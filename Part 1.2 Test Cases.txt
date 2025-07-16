@@ -1,0 +1,18 @@
+1.     //--------------CREATE NEW ACCOUNT--------------//
+
+
+STEPS                                                       TEST DATA                                                       EXPECTED RESULTS
+1. Go to the registration form                              Link: https://dashboard.iproyal.com/register                    Registration form is visible
+
+2. Fill the mandatory fields of the registration form       First name: Test, Last name: Doe,                               Mandatory fields are filled
+                                                            E-mail address:test@iproyal.com, Password: Candidate715*,
+
+3. Click  the button 'Sign up'                                 -                                                            New window with mobile phone verification is displayed
+
+4. Write correct mobile phone number                        Phone number: +37068754065                                      Dashboard with Home page as default is displayed.
+
+
+
+
+
+2.     //--------------LOGIN IS NOT POSSIBLE BY TYPING AN INCORRECT PASSWORD--------------//

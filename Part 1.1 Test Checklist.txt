@@ -1,0 +1,21 @@
+The checklist of scenarios for the test of the registration form:
+
+
+1. It is possible to visit the registration page.
+2. It is possible to create a new account by filling in all mandatory fields (in both English and Chinese languages).
+3. Registration with Google or LinkedIn is possible if the user's browser remembers logins to those systems.
+4. Registration with Google or LinkedIn in Incognito mode should not remember the user's login.
+5. The user can create multiple accounts with similar emails (e.g., a company has multiple emails with the same domain, such as JohnDoe@iproyal.com and NewUser@iproyal.com).
+6. When an account is created, it should not be possible to create another identical account.
+7. Login is not possible by typing an incorrect password (not according to the pop-up requirements).
+8. Error messages for the email address field appear when an incorrect email address is entered.
+9. The visual design of the form (labels, fields, buttons, links, design elements) is in place and meets the specifications.
+10. Responsive design (Widescreen, Laptop, Tablet, Mobile) is correct and adheres to the specifications.
+11. Error messages are displayed when form fields are filled incorrectly.
+12. The password field is hidden by default but can be made visible and hidden again.
+13. When typing XSS scripts instead of names, registration should fail.
+
+
+
+
+

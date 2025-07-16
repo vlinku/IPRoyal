@@ -1,0 +1,16 @@
+AUTOMATED TESTING APPROACH:
+
+1. Run manual testing of the registration form.
+2. Inspect the process and identify the areas that can be easily repeated.
+3. Open DevTools, search for the relevant elements, and check if locators are easy to find.
+4. Generate scenarios that could be automated.
+5. Use Selenium IDE, Katalon Recorder, or a similar tool to mimic the scenarios and determine how the automated test scripts could work.
+6. Present the team with potential automation scripts.
+7. If some flows are approved, ask the developers to add specific attributes like 'data-testid' to facilitate selector identification.
+8. Create automation scripts using Playwright, Cypress, or a similar tool that simplifies script creation and maintenance, and facilitates report generation.
+9. Test the scripts and evaluate whether they provide sufficient and accurate results.
+10. Run the scripts periodically within the regression testing scope or integrate them into CI/CD pipelines for continuous testing.
+
+In the registrationflow.spec.ts file, there is a fragment of the flow that mimics incorrect message display when an incorrect email is used. The test fails because, when I run it manually, I can see the message. However, when running through the tool, reCaptcha is invoked, and I was unable to find a workaround for it.
+The functionsAndData.ts file contains test data and a randomEmail function.
+
