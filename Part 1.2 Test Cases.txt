@@ -1,6 +1,5 @@
 1.     //--------------CREATE NEW ACCOUNT--------------//
 
-
 STEPS                                                       TEST DATA                                                       EXPECTED RESULTS
 1. Go to the registration form                              Link: https://dashboard.iproyal.com/register                    Registration form is visible
 
@@ -16,3 +15,87 @@ STEPS                                                       TEST DATA           
 
 
 2.     //--------------LOGIN IS NOT POSSIBLE BY TYPING AN INCORRECT PASSWORD--------------//
+
+STEPS                                                       TEST DATA                                                       EXPECTED RESULTS
+1. Go to the registration form                              Link: https://dashboard.iproyal.com/register                    Registration form is visible
+
+2. Fill all mandatory fields except Password                -                                                               Fields are filled
+
+3. Type the following from test data and verify            SecurePw9, test8%20, test 8t*                                    Account is not created. Passwords are not accepted.
+that the password is not accepted
+
+
+
+
+3.     //--------------SIGN UP WITH GOOGLE WHEN USER HAS A GOOGLE ACCOUNT--------------//
+
+STEPS                                                       TEST DATA                                                       EXPECTED RESULTS
+1. Go to the registration form                              Link: https://dashboard.iproyal.com/register                    Registration form is visible
+
+2. Click the button 'Sign up with Google'                   -                                                               New pop-up is displayed where user can choose his google account.
+
+3. Click on suggested google account                        e.g. John Doe. John.Doe@gmail.com                               Onclick window with title 'You’re signing back in to iproyal.com'
+                                                                                                                            is displayed.
+
+4. Click button 'Continue'                                                                                                  Dashboard with Home page as default is displayed.
+
+
+
+
+4.     //--------------RESPONSIVE DESIGN OF THE REGISTRATION FORM--------------//
+
+STEPS                                                               TEST DATA                                                       EXPECTED RESULTS
+1. Go to the registration form                                      Link: https://dashboard.iproyal.com/register                    Registration form is visible
+
+2. Click right mouse button and select Inspect (F12)                -                                                               Developer tools is displayed
+
+3. Click toggle device toolbar button and inspect the laptop view   4K - 2560px wide screen                                          Design is displayed correct. No elements overshadow each other.
+   (to the left from Elements tab)                                                                                                   Possible to interact with the fields, fill them. Links works as expected.
+
+4. Change the view to the another laptop view                       Laptop L - 1024px                                                Design is displayed correct.
+
+5. Change the view to the Tablet                                    Tablet - 768px                                                   Design is displayed correct.
+
+6. Change the view to the Mobile                                    Mobile M - 375px                                                 Design is displayed correct.
+
+
+
+
+5.     //--------------CANNOT CREATE ACCOUNT WITH THE TEMPORARILY EMAIL--------------//
+
+STEPS                                                       TEST DATA                                                       EXPECTED RESULTS
+1. Go to the registration form                              Link: https://dashboard.iproyal.com/register                    Registration form is visible
+
+2. Fill the mandatory fields of the registration form       First name: Test, Last name: Doe,                               all mandatory fields, except email, are filled.
+   except email.                                            Password: Candidate715*
+
+3. Go to the temporarily email website and copy email       e.g. site: https://temp-mail.org/en/                            Temporarily email is copied
+                                                                                                                            
+
+4. Fill the E-mail address field with copied email                                                                          Error message in the top of the field is displayed:
+   and click 'Sign up'                                                                                                      "Disposable or temporary email address domains are not allowed." 
+
+
+
+
+6.     //--------------INPUT FIELDS DOES NOT ACCEPT MORE THAN 500 SYMBOLS--------------//
+
+STEPS                                                       TEST DATA                                                       EXPECTED RESULTS
+1. Go to the registration form                              Link: https://dashboard.iproyal.com/register                    Registration form is visible
+
+2. Generate more than 500 symbols                           Go to: https://www.lipsum.com/                                  More than 500 symbols are created.
+   except email.                                            generate 1 paragraph and copy it.
+
+3. Fill the fields with the coppied paragraphs              Fill: First name, Last name, Company                            Fields are uploaded with symbols.
+                                                                                                                            
+
+4. Inspect the displayed error message                                                                                      Error messages for the First name and Last name:
+                                                                                                                            "At most 80 characters are allowed"
+                                                                                                                            Error messages for Company:
+                                                                                                                            "At most 200 characters are allowed"
+
+
+
+
+
+

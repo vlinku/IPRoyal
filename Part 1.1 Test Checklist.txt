@@ -13,7 +13,7 @@ The checklist of scenarios for the test of the registration form:
 10. Responsive design (Widescreen, Laptop, Tablet, Mobile) is correct and adheres to the specifications.
 11. Error messages are displayed when form fields are filled incorrectly.
 12. The password field is hidden by default but can be made visible and hidden again.
-13. When typing XSS scripts instead of names, registration should fail.
+13. When typing XSS scripts instead of names, registration fails.
 
 
 
